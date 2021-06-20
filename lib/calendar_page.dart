@@ -151,9 +151,9 @@ class _CalendarRangeState extends State<CalendarRange> {
   CalendarFormat _calendarFormat = CalendarFormat.month;
   RangeSelectionMode _rangeSelectionMode = RangeSelectionMode.toggledOn;
   DateTime _focusedDay = DateTime.now();
-  DateTime? _selectedDay;
-  DateTime? _rangeStart;
-  DateTime? _rangeEnd;
+  DateTime _selectedDay;
+  DateTime _rangeStart;
+  DateTime _rangeEnd;
 
   @override
   Widget build(BuildContext context) {
