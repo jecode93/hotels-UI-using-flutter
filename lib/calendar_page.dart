@@ -240,6 +240,7 @@ class _CalendarRangeState extends State<CalendarRange> {
 
 class ValidateBookingSection extends StatelessWidget {
   final selectedRadio = 1;
+
   @override
   Widget build(BuildContext context) {
     return Column(
