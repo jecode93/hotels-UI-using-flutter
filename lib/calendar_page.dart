@@ -6,7 +6,7 @@ final kNow = DateTime.now();
 final kFirstDay = DateTime(kNow.year, kNow.month - 3, kNow.day);
 final kLastDay = DateTime(kNow.year, kNow.month + 3, kNow.day);
 
-const d_green = Color(0xFF54D3C2);
+const d_orange = Colors.orange;
 
 class CalendarPage extends StatelessWidget {
   @override
@@ -174,9 +174,9 @@ class _CalendarRangeState extends State<CalendarRange> {
         ),
         calendarStyle: CalendarStyle(
           isTodayHighlighted: false,
-          rangeHighlightColor: d_green,
+          rangeHighlightColor: d_orange,
           rangeStartDecoration: BoxDecoration(
-            color: d_green,
+            color: d_orange,
             shape: BoxShape.circle,
             border: Border.fromBorderSide(
               BorderSide(
@@ -190,7 +190,7 @@ class _CalendarRangeState extends State<CalendarRange> {
             color: Colors.white,
           ),
           rangeEndDecoration: BoxDecoration(
-            color: d_green,
+            color: d_orange,
             shape: BoxShape.circle,
             border: Border.fromBorderSide(
               BorderSide(
@@ -247,7 +247,7 @@ class ValidateBookingSection extends StatelessWidget {
       children: [
         RadioListTile(
           value: selectedRadio,
-          activeColor: d_green,
+          activeColor: d_orange,
           groupValue: selectedRadio,
           selected: true,
           title: Text(
@@ -268,7 +268,7 @@ class ValidateBookingSection extends StatelessWidget {
               style: TextStyle(fontSize: 17),
             ),
             style: ElevatedButton.styleFrom(
-              primary: d_green,
+              primary: d_orange,
               padding: EdgeInsets.all(15),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30.0),

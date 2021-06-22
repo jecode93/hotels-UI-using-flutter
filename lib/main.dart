@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hotels/calendar_page.dart';
 
-const d_green = Color(0xFF54D3C2);
+const d_orange = Colors.orange;
 
 void main() {
   runApp(MyApp());
@@ -117,9 +117,9 @@ class SearchSection extends StatelessWidget {
                 width: 10,
               ),
               Container(
-                padding: EdgeInsets.all(3),
+                padding: EdgeInsets.all(2),
                 decoration: BoxDecoration(
-                  color: d_green,
+                  color: d_orange,
                   borderRadius: BorderRadius.circular(50),
                   boxShadow: [
                     BoxShadow(
@@ -144,7 +144,7 @@ class SearchSection extends StatelessWidget {
                   ),
                   style: ElevatedButton.styleFrom(
                     shape: CircleBorder(),
-                    primary: d_green,
+                    primary: d_orange,
                   ),
                 ),
               )
@@ -281,7 +281,7 @@ class HotelSection extends StatelessWidget {
                         icon: Icon(
                           Icons.sort_outlined,
                           size: 30,
-                          color: d_green,
+                          color: d_orange,
                         ),
                         onPressed: () {},
                       ),
@@ -348,7 +348,7 @@ class HotelCard extends StatelessWidget {
                       onPressed: () {},
                       child: Icon(
                         Icons.favorite_outline_rounded,
-                        color: d_green,
+                        color: d_orange,
                         size: 20,
                       ),
                     ))
@@ -400,7 +400,7 @@ class HotelCard extends StatelessWidget {
                         children: [
                           Icon(
                             Icons.place,
-                            color: d_green,
+                            color: d_orange,
                             size: 14,
                           ),
                           Text(
@@ -431,27 +431,27 @@ class HotelCard extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.star_rate,
-                      color: d_green,
+                      color: d_orange,
                       size: 14,
                     ),
                     Icon(
                       Icons.star_rate,
-                      color: d_green,
+                      color: d_orange,
                       size: 14,
                     ),
                     Icon(
                       Icons.star_rate,
-                      color: d_green,
+                      color: d_orange,
                       size: 14,
                     ),
                     Icon(
                       Icons.star_rate,
-                      color: d_green,
+                      color: d_orange,
                       size: 14,
                     ),
                     Icon(
                       Icons.star_border,
-                      color: d_green,
+                      color: d_orange,
                       size: 14,
                     ),
                   ],
